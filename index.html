@@ -28,15 +28,8 @@ var data = {
 };
 $(document).ready(function() {
     var lineChart = $('<div></div>').appendTo('body').MPChart({chartType: 'line', highchartsOptions: {
-        labels: {
-            item:[{
-              html: "Label Name Here",
-              style: {
-                 left: '400px'
-              
-              },
-              useHTML: true
-            }] 
+        datalabels: {
+           enabled: true
         }
     }});                                // Create a line chart
     lineChart.MPChart('setData', data); // Set the chart's data
