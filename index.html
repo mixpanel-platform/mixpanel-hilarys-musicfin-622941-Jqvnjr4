@@ -27,16 +27,16 @@ var data = {
     }
 };
 $(document).ready(function() {
-    var lineChart = $('<div></div>').appendTo('body').MPChart({chartType: 'bar', highchartsOptions: {
+    var lineChart = $('<div></div>').appendTo('body').MPChart({chartType: 'line', highchartsOptions: {
         plotOptions:{
-           bar:{
+           series:{
             dataLabels: {
               enabled: true,
-              borderRadius: 5,
-              backgroundColor: 'rgba(252, 255, 197, 0.7)',
-              borderWidth: 1,
-              borderColor: '#AAA',
-              y: -6
+              //borderRadius: 5,
+              //backgroundColor: 'rgba(252, 255, 197, 0.7)',
+              //borderWidth: 1,
+              //borderColor: '#AAA',
+              //y: -6
             }
           }
         }
