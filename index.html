@@ -29,7 +29,10 @@ var data = {
 $(document).ready(function() {
     var lineChart = $('<div></div>').appendTo('body').MPChart({chartType: 'bar', highchartsOptions: {
         dataLabels: {
-           enabled: true
+          series:{
+            enabled: true
+          }
+           
         }
     }});                                // Create a line chart
     lineChart.MPChart('setData', data); // Set the chart's data
