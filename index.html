@@ -35,11 +35,10 @@ $(document).ready(function() {
               inside: false
             }
           },
-          yAxis:{
-            ceiling: 200
-          }
+        },
+        yAxis:{
+            max: 200
         }
-        
       }
     });                                // Create a line chart
     lineChart.MPChart('setData', data); // Set the chart's data
